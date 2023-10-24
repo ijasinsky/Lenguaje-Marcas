@@ -1,0 +1,15 @@
+#titol{
+background-color: #444;
+font-family: Verdana;
+text-align: center;
+color: white;
+}
+.seccio-noticies{
+    font-family: Arial;
+    margin: 20px;
+    border-bottom: 10px;
+}
+.Imatge{
+width: 100px;
+height: normal;
+}
