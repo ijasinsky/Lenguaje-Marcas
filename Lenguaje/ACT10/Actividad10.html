@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Actividad 10</title>
-    </head>
-    <body>
-        <div class="header">
-            <header><font color="#333"><h1>Títol de la Página</h1></font></header>
-        </div>
-        <div class="main">
-            <main>
-        <h2><font color=" #555.">Subtítol</font></h2>
-        Aquest és un pàragraf d'exemple per la nostra actividad.
-        <h2><font color="#FF5733">Aquest pàragraf està destacat</font></h2>
-        <ul><font color="#666">
-            <li>Element 1 de la llista</li>
-            <li>Element 2 de la llista</li>
-            <li>Element 3 de la llista</li>
-        </font></ul>
-            </main></div>
-    </body></html>
+
+<head>
+    <title>Actividad 10</title>
+
+    <style>
+        * {
+            font-family: Arial; 
+            background-color: #F3F4F6;
+        }
+
+        #body{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #h1 {
+            color: #333;
+            text-align: center;
+            padding: 20px 20px;
+            background-color: #E0E0E0;
+        }
+
+        #h2 {
+            color: #555;
+            padding: 10px 10px;
+            margin-left: 20px;
+        }
+
+        #ul {
+            list-style-type: circle;
+            margin-left: 40px;
+        }
+
+        .li{
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .destacat{
+            font-weight: bold; /*Letra en negrita*/
+            font-size: 150%;
+            color: #FF5733;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <h1 id="h1">Títol de la pàgina</h1>
+    <h2 id="h2">Subtítol</h2>
+    <p>Aquest és un pàragraf d'exemple per la nostra actividad.</p>
+    <div class="destacat">
+        <p class="destacat">Aquest pàragraf està destacat</p>
+    </div>
+    <ul id="ul">
+        <div class="li">
+        <li>Element 1 de la llista</li>
+        <li>Element 2 de la llista</li>
+        <li>Element 3 de la llista</li>
+    </div>
+    </ul>
+</body>
+
+</html>
