@@ -1,0 +1,31 @@
+body{
+    background-color: tomato;
+}
+header{
+    background-color: tomato;
+}
+.h1{
+    font: small-caps 100%/200% serif;
+}
+.h2{
+    font: small-caps 100%/200% serif;
+}
+nav{
+    background-color: black;
+    color: whitesmoke;
+    float: left;
+    width: 200px;
+    padding-top: 10px;
+}
+.ul{
+    background-color: black;
+    color: whitesmoke;
+}
+main{
+    background-color: whitesmoke;
+    margin-left: 200px;
+    padding-top: 1px;
+}
+footer{
+    text-align: center;
+}
