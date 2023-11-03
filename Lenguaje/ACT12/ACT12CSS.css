@@ -2,7 +2,7 @@
 body{
     background-color: tomato;
 }
-.header{
+header{
     background-color: tomato;
 }
 .h1{
@@ -11,27 +11,22 @@ body{
 .h2{
     font: small-caps 100%/200% serif;
 }
-.nav{
-    padding-left: 10px;
-    padding-top: 10px;
-    margin-left: 57px;
+nav{
+    background-color: black;
+    color: whitesmoke;
     float: left;
-    position: relative;
-    width: 45%;
-    border: steelblue solid 1px;
-    height: auto;
+    width: 200px;
+    padding-top: 10px;
 }
 .ul{
     background-color: black;
     color: whitesmoke;
 }
-.main{
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-left: 10px;
-    position: relative;
-    float: left;
-    width: 45%;
-    border: steelblue solid 1px;
-    height: auto;
+main{
+    background-color: whitesmoke;
+    margin-left: 200px;
+    padding-top: 1px;
+}
+footer{
+    text-align: center;
 }
