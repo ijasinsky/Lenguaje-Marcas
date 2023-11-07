@@ -1,0 +1,22 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    display: flex;
+    flex-direction: row;
+}
+.item{
+    border: 1px solid;
+    flex: 0 1 15%;
+    margin: 10px;
+    max-width: 15%;
+    max-height: 15%;
+}
+.item:hover {
+    flex: 1 1 10%;
+    background: indigo;
+  }
+.p{
+    margin-left: 50px;
+    padding-left: 50px;
+}
