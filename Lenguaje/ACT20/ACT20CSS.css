@@ -9,3 +9,14 @@
     flex-direction: row;
     justify-content: space-evenly;
 } */
+header{
+    background-color:deepskyblue;
+    color: white;
+}
+.margen80{
+    width: 80%;
+    margin: auto;
+}
+.centrado{
+    align-content: center;
+}

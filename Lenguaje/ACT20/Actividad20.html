@@ -1,62 +1,69 @@
 <!Doctype html>
 <html>
 <head>
-    <title>Actividadd20</title>
+    <title>Actividad20</title>
     <link rel="stylesheet" href="ACT20CSS.css">
 </head>
 <!-- IDEA GENERAL -->
 <body>
-    <h1>CIDETech</h1>
-    <ul>
-        <li>Inicio</li>
-        <li>Sobre nosaltres</li>
-        <li>Serveis</li>
-        <li>Portfolio</li>
-        <li>Contacte</li>
-    </ul>
-
+    <header>
+    <h1 id="inicio">CIDETech</h1>
+    <div class="margen80 centrado">
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobrenosaltres">Sobre nosaltres</a>
+            <a href="#serveis">Serveis</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contacte">Contacte</a>
+    </nav>
+        <!-- Aqui va el buscador y la hamburguesa -->
+    </div>
+    </header>
     <img src="Foto generica">
-    <h1>Sobre nosaltres</h1>
-    <p>pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
-    <h1>El Nostres Serveis</h1>
-    <!-- De momento seran <ul>-->
+    <div class="margen80">
+        <h1 id="sobreosaltres">Sobre nosaltres</h1>
+        <p>pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+    
+        <h1 id="serveis">El Nostres Serveis</h1>
+        <!-- De momento seran <ul>-->
+        <div class="tamanyimg">
+        <ul>
+            <img src="img/diseno-grafico.png">
+            <li>Diseny Gràfic</li>
+            <p>Creació de solucions visuals per a la marca, incloent logotips, identitat corporativa i publicitat.</p>
+            <img src="img/escritorio.png">
+            <li>Desenvolupament Web i videojocs</li>
+            <p>Desenvolupament de llocs web personalitzats, des de pàgines corporatives fins a botigues en linia complexes.</p>
+            <img src="img/seo.png">
+            <li>SEO i Màrqueting Digital</li>
+            <p>Optimització per a motors de cerca i estratègies de marqueting per millorar la teva visibilitat en linea.</p>
+            <img src="img/apoyo-tecnico.png">
+            <li>Suport Tècnic</li>
+            <p>Assistencia tècnica i suport continu per tots els nostres producctes i serveis.</p>
+        </ul>
+        </div>
+    <h1 id="portfolio">El Nostre Portfolio</h1>
     <ul>
-        <img src="Foto generica">
-        <li>Diseny Gràfic</li>
-        <p>aaaaaaaaaaaaaaa</p>
-        <img src="Foto generica">
-        <li>Desenvolupament Web i videojocs</li>
-        <p>aaaaaaaaaaaaaaaaaaaaaaaaa</p>
-        <img src="Foto generica">
-        <li>SEO i Màrqueting Digital</li>
-        <p>aaaaaaaaaaaaaaaaaaaaaa</p>
-        <img src="Foto generica">
-        <li>Suport Tècnic</li>
-        <p>aaaaaaaaaaaaaa</p>
-    </ul>
-
-    <h1>El Nostre Portfolio</h1>
-    <ul>
-        <img src="Foto generica">
+        <img src="img/pexels-fauxels-3183150.jpg">
         <li>Projecte 1</li>
-        <p>oooooooooooo</p> <p>Veure Detalls</p>
-        <img src="Foto generica">
+        <p>Descripció breu del projecte</p> <p>Veure Detalls</p>
+        <img src="img/pexels-fauxels-3183153.jpg">
         <li>Projecte 2</li>
-        <p>oooooooooooo</p> <p>Veure Detalls</p>
-        <img src="Foto generica">
+        <p>Descripció breu del projecte</p> <p>Veure Detalls</p>
+        <img src="img/pexels-pixabay-270408.jpg">
         <li>Projecte 3</li>
-        <p>oooooooooooo</p> <p>Veure Detalls</p>
+        <p>Descripció breu del projecte</p> <p>Veure Detalls</p>
     </ul>
 
     <h2>Contacta'ns</h2>
     <p>Si tens una consulta, no dubtis en contactar-nos mitjançant el següent formulari</p>
-    <label for="Nombre">Nom:</label>
+    <p><label for="Nombre">Nom:</label></p>
     <input type="text" id="name" name="nname" value="">
     <p></p>
-    <label for="Apellido">Llinatge:</label>
+    <p><label for="Apellido">Llinatge:</label></p>
     <input type="text" id="cognom" name="nname" value="">
     <p></p>
-    <label for="Missatge">Missatge</label>
+    <p><label for="Missatge">Missatge:</label></p>
     <textarea name="Missatge" rows="7" cols="100"></textarea>
     <button>Enviar Missatge</button>
     <footer>
@@ -71,7 +78,7 @@
                 <li a herf="">Contacte</li>
             </ul>
             </nav>
-            <h4>Contacta'ns</h4>
+            <h4 id="contacte">Contacta'ns</h4>
             <p>971 606 499</p>
             <p>info@cidetech.com</p>
             <p>Carrer de l'Arner 3, Palma</p>
@@ -80,7 +87,8 @@
             <img src="Twiter">
             <img src="Insta">
             <img src="IN">
-            <p>© 2023 CIDETech | Dissenyat per </p>
+            <p>© 2023 CIDETech | Dissenyat per @ijasinsky</p>
     </footer>
+    </div>
 </body>
 </html>
