@@ -20,3 +20,57 @@ header{
 .centrado{
     align-content: center;
 }
+nav{
+    background-color:deepskyblue;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+li a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+input{
+    height: 30px;
+    align-self: center;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+h1{
+    color: white;
+}
+@media (min-width: 1024px){
+    #hamburger{
+    display: none;}
+}
+@media (max-width: 1024px){
+    li a{
+        display: none;
+    }
+    input{
+        align-content: center;
+    }
+}
+@media (max-width: 768px){
+    input{display: none;}
+}
+p{
+    font-size: small;
+}
+.sobrenosaltres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulotexto{
+    width: 50%;
+}
+img{
+    max-width: 50%;
+    width: 50%;
+}
