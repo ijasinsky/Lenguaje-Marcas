@@ -66,11 +66,16 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .titulotexto{
-    width: 50%;
+    width: 45%;
 }
-img{
-    max-width: 50%;
-    width: 50%;
+.imagensobrenosotros{
+    width: 45%;
+    text-align: center;
+}
+.imagensobrenosotros img{
+    width: 400px;
+    height: 300px;
 }
