@@ -22,19 +22,20 @@ input{
 h1{
     color: white;
 }
-@media (min-width: 768px){
+@media (min-width: 1024px){
     #hamburger{
     display: none;}
 }
-@media (max-width: 768px){
+@media (max-width: 1024px){
     li a{
         display: none;
     }
     input{
         align-content: center;
     }
-    ::after{#hamburger{
-    color: white;
-    padding-left: 50px;}}
 }
+@media (max-width: 768px){
+    input{display: none;}
+}
+
 
