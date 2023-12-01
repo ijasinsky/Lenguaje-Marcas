@@ -17,6 +17,9 @@ header{
     width: 80%;
     margin: auto;
 }
+.fondogris{
+    background-color:gainsboro;
+}
 .centrado{
     align-content: center;
 }
@@ -78,4 +81,121 @@ p{
 .imagensobrenosotros img{
     width: 400px;
     height: 300px;
+}
+.serveigrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+.servei1{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+}
+.servei2{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+}
+.servei3{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+}
+.servei4{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+} 
+.borderedondo{
+    border-radius: 5px;
+}
+.serveigrid img{
+    max-width: 50%;
+    height: auto;
+}
+.serveigrid h3{
+    color: deepskyblue;
+}
+.portogrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+.porto1{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+}
+.porto2{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+}
+.porto3{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+}
+.porto4{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+} 
+.portogrid img{
+    max-width: 100%;
+    height: auto;
+}
+.portogrid h3{
+    color: deepskyblue;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.margen55{
+    width: 55%;
+    margin: auto;
+}
+.formu input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.formu textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 180px;
+}
+.formu button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: deepskyblue;
+    color: white;
+    border-radius: 5px;
+}
+footer{
+    background-color:#252525;
+    color: white;
+}
+footer img{
+    max-width: 20%;
+    height: auto;
+}
+.footergrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.padd10{
+    padding: 10px;
+}
+footer a{
+    color: #ccc;
+    text-decoration: none;
 }
