@@ -1,17 +1,29 @@
-const readline = require('node:readline');
-const { stdin: input, stdout: output } = require('node:process');
+function celsiusAFahrenheit(celsius) {
+  return celsius * 9/5 + 32;
+}
 
-const rl = readline.createInterface({ input, output });
+function fahrenheitACelsius(fahrenheit) {
+  return (fahrenheit - 32) * 5/9;
+}
 
-rl.question('Temperatura en ºC o ºF: ', (answer) => {
-  // TODO: Log the answer in a database
-  if (answer == 28){
-  answer = answer * 1.8 + 32;
-  console.log(`De Celcius a Fahrenheit son: ${answer}`);
+function main() {
+  console.log("Conversor de Temperatura");
+
+  // Pedir al usuario que introduzca la temperatura y la escala
+  var temperatura = parseFloat(prompt("Introduce la temperatura:"));
+  var escala = prompt("¿En qué escala? (C para Celsius, F para Fahrenheit):");
+
+  // Realizar la conversión adecuada
+  if (escala.toUpperCase() === 'C') {
+      var resultado = celsiusAFahrenheit(temperatura);
+      console.log(temperatura + " grados Celsius son " + resultado.toFixed(2) + " grados Fahrenheit.");
+  } else if (escala.toUpperCase() === 'F') {
+      var resultado = fahrenheitACelsius(temperatura);
+      console.log(temperatura + " grados Fahrenheit son " + resultado.toFixed(2) + " grados Celsius.");
+  } else {
+      console.log("Entrada no válida. Por favor, introduce 'C' o 'F'.");
   }
-  if (answer == 30){
-    answer = (answer - 32) / 1.8;
-    console.log(`De Fahrenheit a Celcius son: ${answer}`);
-    }
-  rl.close();
-});
+}
+
+// Llamar a la función principal
+main();
