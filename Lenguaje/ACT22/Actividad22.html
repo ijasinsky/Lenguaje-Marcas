@@ -10,20 +10,20 @@
         </p>
     </div>
     <div>
-        <button onclick = "aumentar">Aumentar</button>
-        <button onclick = "disminuir">Disminuir</button>
+        <button onclick = "aumentar()">Aumentar</button>
+        <button onclick = "disminuir()">Disminuir</button>
     </div>
 <script>
 function aumentar() {
     let parrafos = document.querySelectorAll("p")
     for(const parrafo of parrafos) {
-        parrafo.style.fontSize = "500px"
+        parrafo.style.fontSize = "50px"
     }
 }
 function disminuir() {
     let parrafos = document.querySelectorAll("p")
     for(const parrafo of parrafos) {
-        parrafo.style.fontSize = "2px"
+        parrafo.style.fontSize = "20px"
     }
 }
 </script>
