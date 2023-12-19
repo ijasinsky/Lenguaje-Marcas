@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Activitat23</title>
+<style type="text/css">
+    html {
+  text-align: center;
+  padding-top: 1em;
+  background: #f6ddda;
+}
+
+button {
+  padding: 1em 1.2em;
+  background: #eb6ba0;
+  color: white;
+  font-size: 20px;
+  border-radius: .3em;
+  border: none;
+  border-bottom: 4px solid #aa4b72;
+  cursor: pointer;
+}
+
+section {
+  max-width: 700px;
+  margin: 2em auto;
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #2b2c3b;
+  text-align: left;
+}
+
+.hidden-section {
+    display: none;
+}
+.hidden-section.reveal {
+    display: block;
+}
+</style>
+    </head>
+<body>
+<button class="reveal-button">Click me</button>
+<section class="hidden-section">Subway tile you probably haven't heard of them offal keffiyeh. Sartorial irony meh cold-pressed viral heirloom thundercats. Woke tumblr taiyaki lyft neutra. Crucifix hot chicken brunch you probably haven't heard of them, coloring book retro health goth master cleanse hell of vexillologist.</section>
+<script>
+    /* Selecting DOM elements */
+const revealButton = document.querySelector(".reveal-button");
+const hiddenSection = document.querySelector(".hidden-section");
+
+/* Callback function */
+function revealSection() {
+    if (hiddenSection.classList.contains("reveal")) {
+        hiddenSection.classList.remove("reveal");
+    } else {
+        hiddenSection.classList.add("reveal");
+    }
+}
+
+/* Event listener */
+revealButton.addEventListener("click", revealSection, false);
+</script>
+</body>
+</html>
+<!-- https://webdesign.tutsplus.com/es/introduction-to-javascript-event-listeners--cms-35236t -->
