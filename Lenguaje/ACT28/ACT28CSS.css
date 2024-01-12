@@ -1,0 +1,245 @@
+/* <div class="uno dos"> un div puede tener más de dos clases*/
+/* .body{
+    background-color: ;
+    width: 80%;
+    margin: auto;
+} Esto sirve para que el contenido ocupe el 80% de la pagina*/
+/* .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+} */
+header{
+    background-color:deepskyblue;
+    color: white;
+}
+.margen80{
+    width: 80%;
+    margin: auto;
+}
+.fondogris{
+    background-color:gainsboro;
+}
+.centrado{
+    align-content: center;
+}
+.☰{
+    margin-top: 5px;
+    padding-top: 5px;
+}
+.respmenu a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #456789;
+    max-width: 200px;
+    background: deepskyblue;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
+}
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times{
+    position: absolute;
+    width: 30px;
+    height: 25px;
+}
+.respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 30px;
+    pointer-events: none;
+}
+.respmenu input[type="checkbox"] {
+    opacity: 0;
+    margin-top: 20px;
+    margin-left: auto;
+}
+.respmenu {
+    color: white;
+    position: relative;
+    background: deepskyblue;
+    min-height: 30px;
+}
+.respmenu .main {
+    display: none;
+} 
+.respmenu input:checked ~ .main {
+    display: block;
+}
+.respmenu input:checked ~ .fa-bars {
+    display: none;
+}
+.respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+}
+nav{
+    background-color:deepskyblue;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+li a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+input{
+    height: 30px;
+    align-self: center;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+@media (min-width: 1024px){
+    #hamburger{
+    display: none;}
+}
+@media (max-width: 1024px){
+    li a{
+        display: none;
+    }
+    input{
+        align-content: center;
+    }
+}
+@media (max-width: 768px){
+    input{display: none;}
+}
+p{
+    font-size: small;
+}
+.sobrenosaltres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.titulotexto{
+    width: 45%;
+}
+.imagensobrenosotros{
+    width: 45%;
+    text-align: center;
+}
+.imagensobrenosotros img{
+    width: 400px;
+    height: 300px;
+}
+.serveigrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+.servei1{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+}
+.servei2{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+}
+.servei3{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+}
+.servei4{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+} 
+.borderedondo{
+    border-radius: 5px;
+}
+.serveigrid img{
+    max-width: 50%;
+    height: auto;
+}
+.serveigrid h3{
+    color: deepskyblue;
+}
+.portogrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+.porto1{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+}
+.porto2{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+}
+.porto3{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+}
+.porto4{
+    border: 1px solid #ccc;
+     padding: 10px;
+     text-align: center;
+} 
+.portogrid img{
+    max-width: 100%;
+    height: auto;
+}
+.portogrid h3{
+    color: deepskyblue;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.margen55{
+    width: 55%;
+    margin: auto;
+}
+.formu input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.formu textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 180px;
+}
+.formu button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: deepskyblue;
+    color: white;
+    border-radius: 5px;
+}
+footer{
+    background-color:#252525;
+    color: white;
+}
+footer img{
+    max-width: 20%;
+    height: auto;
+}
+.footergrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.padd10{
+    padding: 10px;
+}
+footer a{
+    color: #ccc;
+    text-decoration: none;
+}
