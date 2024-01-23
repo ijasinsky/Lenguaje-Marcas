@@ -23,53 +23,6 @@ header{
 .centrado{
     align-content: center;
 }
-.☰{
-    margin-top: 5px;
-    padding-top: 5px;
-}
-.respmenu a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    padding: 10px 20px;
-    border-bottom: 2px solid #456789;
-    max-width: 200px;
-    background: deepskyblue;
-    font-variant: small-caps;
-    text-shadow: 1px 1px black;
-}
-.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times{
-    position: absolute;
-    width: 30px;
-    height: 25px;
-}
-.respmenu .fa-bars, .respmenu .fa-times {
-    font-size: 30px;
-    pointer-events: none;
-}
-.respmenu input[type="checkbox"] {
-    opacity: 0;
-    margin-top: 20px;
-    margin-left: auto;
-}
-.respmenu {
-    color: white;
-    position: relative;
-    background: deepskyblue;
-    min-height: 30px;
-}
-.respmenu .main {
-    display: none;
-} 
-.respmenu input:checked ~ .main {
-    display: block;
-}
-.respmenu input:checked ~ .fa-bars {
-    display: none;
-}
-.respmenu input:not(:checked) ~ .fa-times {
-    display: none;
-}
 nav{
     background-color:deepskyblue;
     display: flex;
@@ -90,6 +43,12 @@ input{
     align-self: center;
     margin-right: 20px;
     border-radius: 7px;
+}
+h1{
+    color: white;
+}
+.hide{
+    max-height: '0';
 }
 @media (min-width: 1024px){
     #hamburger{
