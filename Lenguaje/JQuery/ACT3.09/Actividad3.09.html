@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activitat3.09</title>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+</head>
+<body>
+    
+    <h1>CREA TU BLOC</h1>
+
+    <h3>Elige el diseño perfecto</h3>
+    <p>Crea un blog atractivo y adaptado a tu estilo. 
+        Puedes elegir entre una selección de plantillas fáciles de usar, 
+        con diseños flexibles y montones de imágenes de fondo, o bien diseñar un blog totalmente nuevo.
+    </p>
+    
+    <h3>Obtén un dominio</h3>
+    <p>Encuentra el alojamiento perfecto para tu blog. Consigue un dominio blogspot.com o compra uno personalizado en un par de clics.</p>
+    
+    <h3>Gana dinero</h3>
+    <p>Sácale rendimiento a tu esfuerzo. Google AdSense puede mostrar automáticamente en tu blog anuncios relevantes orientados a tus lectores: 
+        así obtienes ingresos mientras escribes sobre lo que te apasiona.
+    </p>
+
+    <h3>Conoce a tu audiencia</h3>
+    <p>Descubre qué entradas tienen más éxito con los análisis integrados en Blogger. Puedes ver el origen de tus lectores y qué les interesa.
+         Incluso puedes conectar tu blog directamente con Google Analytics si quieres saber más detalles.
+    </p>
+
+    <div class="boton">
+        <button id="coment">Comentarios</button>
+        <p></p>
+        <textarea name="comentarios" rows="5" cols="100" id = "text">Escribe aquí para comentar</textarea>
+        <button id="agregar" onclick="agregar()">Enviar</button>
+        <button id="eliminar">Eliminar</button>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#coment").click(function() {
+                $("#text").add("#agregar").add("#eliminar").toggle(500);
+            });
+        });
+      </script>
+</body>
+</html>
