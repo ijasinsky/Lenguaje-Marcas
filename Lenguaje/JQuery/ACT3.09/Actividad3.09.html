@@ -32,14 +32,26 @@
     <div class="boton">
         <button id="coment">Comentarios</button>
         <p></p>
+        <div id="comentarios">
+            <ul id="ul">
+                <li id="li">Que malo</li>
+                <li>Es una mierd*</li>
+            </ul>
+        </div>
         <textarea name="comentarios" rows="5" cols="100" id = "text">Escribe aquí para comentar</textarea>
         <button id="agregar" onclick="agregar()">Enviar</button>
         <button id="eliminar">Eliminar</button>
     </div>
     <script>
+        $(document).ready(function(){
+            $("#agregar").click(function(){
+                $("li:first").append
+            });
+        });
+
         $(document).ready(function() {
             $("#coment").click(function() {
-                $("#text").add("#agregar").add("#eliminar").toggle(500);
+                $("#text").add("#agregar").add("#eliminar").add("#comentarios").toggle(500);
             });
         });
       </script>
