@@ -9,22 +9,23 @@ export const filas = [
       imagen: "Lenguaje\\Imagenes\\Manzanas.jpg",
     },
     {
-      producto: "manzana",
+      producto: "Pera",
       cantidad: 2,
-      precio: 3.4,
+      precio: 2.9,
       tienda: "Mercadona",
       notas: "Comprar 3",
       comprado: true,
       imagen: "Lenguaje\\Imagenes\\Manzanas.jpg",
     },
     {
-      producto: "manzana",
+      producto: "Naranja",
       cantidad: 2,
-      precio: 3.4,
+      precio: 4.5,
       tienda: "Mercadona",
       notas: "Comprar 3",
       comprado: true,
       imagen: "Lenguaje\\Imagenes\\Manzanas.jpg",
     }
+    //https://es.react.dev/learn/thinking-in-react 
     // Afegeix més objectes segons necessitis
   ];

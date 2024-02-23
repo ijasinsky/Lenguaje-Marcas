@@ -66,14 +66,14 @@ import { useEffect, useState } from "react";
           </thead>
           <tbody>
             {currentDataDisplayed
-              ? currentDataDisplayed.products.map((product) => (
-                  <tr key={product.producto}>
-                    <td>{product.cantidad}</td>
-                    <td>{product.precio}</td>
-                    <td>{product.tienda}</td>
-                    <td>{product.notas}</td>
-                    <td>{product.comprado}</td>
-                    <td>{product.imagen}</td>
+              ? currentDataDisplayed.products.map((Fila) => (
+                  <tr key={Fila.producto}>
+                    <td>{Fila.cantidad}</td>
+                    <td>{Fila.precio}</td>
+                    <td>{Fila.tienda}</td>
+                    <td>{Fila.notas}</td>
+                    <td>{Fila.comprado}</td>
+                    <td>{Fila.imagen}</td>
                   </tr>
                 ))
               : null}
