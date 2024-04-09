@@ -22,12 +22,8 @@ const headers = new Headers({
     redirect: 'follow'
   };
   
-  fetch("https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1")
+  fetch("https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1")
     .then(response => response.text())
     .then(result => console.log(result))
-    .catch(error => console.log('error', error)); 
-
-    React.useEffect(() => {
-        document.title = 'You click ${headers} for dogs';
-    }
-    ,[])
+    .catch(error => console.log('error', error));
+    //https://thecatapi.com/thanks
