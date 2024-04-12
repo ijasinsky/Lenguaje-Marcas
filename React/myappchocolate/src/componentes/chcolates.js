@@ -1,14 +1,32 @@
 import React from "react";
 import './App.css';
-import { json } from "stream/consumers";
+import { json, text } from "stream/consumers";
 
 const requestURL = "C:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Lenguaje\\Activitat3.15\\data.json";
+
+function fetchQuestions(){
+    fetch("C:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Lenguaje\\Activitat3.15\\data.json")
+    .then (response => response.json())
+    .then(result => console.log(result))
+    .catch(err => console.error(err))
+}
+
+const fs = require('fs')
+
+fs.readFileSync('./data', function(err, result){
+    if(err) {
+        throw err;
+    }
+    console.log("El contenido es: ", JSON.parse(result))
+})
+
 const request = new data.json;
 request.open("GET", requestURL)
 
 request.responseType = "json";
 request.send();
 
+const obj = JSON.parse(fetchQuestions)
 
 class App extends React.Component {
     constructor(props){
@@ -19,7 +37,6 @@ class App extends React.Component {
             DataisLoaded: false
         };
     }
-    
     componentDidMount(){
         fetch(
             "C:\\Users\\alumne-DAM\\Documents\\Lenguaje-Marcas\\Lenguaje\\Activitat3.15\\data.json")
@@ -48,6 +65,5 @@ class App extends React.Component {
                 </div>
             );
     }
-    
 }
 export default App
