@@ -1,0 +1,73 @@
+//JSON
+{
+  "Marcas de Chocolates": [
+    {
+      "nom": "KitKat",
+      "id": "1",
+      "disponible": true,
+      "imgUrl": "https://live.staticflickr.com/7292/9782188391_f0a863debb_b.jpg"
+    },
+    {
+      "nom": "Kinder",
+      "id": "2",
+      "disponible": false,
+      "imgUrl": "https://t3.ftcdn.net/jpg/05/33/12/54/360_F_533125435_edAtLUPxxd7Lknkdx4cVohmnCKP4pLeW.jpg"
+    },
+    {
+      "nom": "Huesitos",
+      "id": "3",
+      "disponible": true,
+      "imgUrl": "https://m.media-amazon.com/images/I/81ib8PedFrS._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "nom": "Lacasitos",
+      "id": "4",
+      "disponible": false,
+      "imgUrl": "https://m.media-amazon.com/images/I/81ib8PedFrS._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "nom": "Toblerone",
+      "id": "5",
+      "disponible": true,
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Toblerone_3362.jpg/1200px-Toblerone_3362.jpg"
+    }
+  ]
+}
+
+//VALIDACION SCHEMA
+
+{
+    "Marcas de Chocolates": [
+      {
+        "nom": "KitKat",
+        "id": "1",
+        "disponible": true,
+        "imgUrl": "https://live.staticflickr.com/7292/9782188391_f0a863debb_b.jpg"
+      },
+      {
+        "nom": "Kinder",
+        "id": "2",
+        "disponible": false,
+        "imgUrl": "https://t3.ftcdn.net/jpg/05/33/12/54/360_F_533125435_edAtLUPxxd7Lknkdx4cVohmnCKP4pLeW.jpg"
+      },
+      {
+        "nom": "Huesitos",
+        "id": "3",
+        "disponible": true,
+        "imgUrl": "https://m.media-amazon.com/images/I/81ib8PedFrS._AC_UF894,1000_QL80_.jpg"
+      },
+      {
+        "nom": "Lacasitos",
+        "id": "4",
+        "disponible": false,
+        "imgUrl": "https://m.media-amazon.com/images/I/81ib8PedFrS._AC_UF894,1000_QL80_.jpg"
+      },
+      {
+        "nom": "Toblerone",
+        "id": "5",
+        "disponible": true,
+        "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Toblerone_3362.jpg/1200px-Toblerone_3362.jpg"
+      }
+    ]
+  }
+
