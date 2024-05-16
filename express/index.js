@@ -44,16 +44,23 @@ app.get('/productes', (req, res) => {
   })
 
 app.get('/producte', (req, res) => {
-    producteid = req.query.id;
-    const rowp = dbp.prepare('SELECT * FROM producte WHERE id = ?').get(producteid);
+    producteID = req.query.id;
+    const rowp = dbp.prepare('SELECT * FROM producte WHERE id = ?').get(producteID);
     res.json(rowp);
     res.render("producte");
   })
 
-app.get('/comanda', (req, res) => {
+app.get('/comandes', (req, res) => {
     //Select
-    const rowsp = dbp.prepare('Select * from comandes').all();
-    res.send(rowsp)
+    const rowsc = dbc.prepare('Select * from comanda').all();
+    res.send(rowsc)
+  })
+
+  app.get('/comanda', (req, res) => {
+    comandaID = req.query.id;
+    const rowc = dbc.prepare('SELECT * FROM comanda WHERE id = ?').get(comandaID);
+    res.json(rowc);
+    res.render("comandes");
   })
 
   //Ignorar de momento
