@@ -4,11 +4,13 @@ body{
 header{
     background-color: tomato;
 }
-.h1{
+h1{
     font: small-caps 100%/200% serif;
+    font-size: 120%;
 }
-.h2{
+h2{
     font: small-caps 100%/200% serif;
+    font-size: 120%;
 }
 nav{
     background-color: black;
@@ -17,7 +19,7 @@ nav{
     width: 200px;
     padding-top: 10px;
 }
-.ul{
+ul{
     background-color: black;
     color: whitesmoke;
 }
