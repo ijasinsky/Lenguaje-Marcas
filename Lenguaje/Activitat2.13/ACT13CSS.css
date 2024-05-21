@@ -4,10 +4,10 @@ body{
 header{
     background-color: tomato;
 }
-.h1{
+h1{
     font: small-caps 100%/200% serif;
 }
-.h2{
+h2{
     font: small-caps 100%/200% serif;
 }
 nav{
@@ -17,7 +17,7 @@ nav{
     width: 200px;
     padding-top: 10px;
 }
-.ul{
+ul{
     background-color: black;
     color: whitesmoke;
 }
@@ -25,7 +25,46 @@ main{
     background-color: whitesmoke;
     margin-left: 200px;
     padding-top: 1px;
+    float: left;
+    margin: auto;
+    padding-right: 54px;
+    padding-bottom: 100px;
 }
 footer{
+    text-align: center;
+}
+img{
+    border: 10px solid purple;
+    width: 150px;
+    height: 170px;
+    float: left;
+    margin: 10px;
+}
+.img1{
+    float: left;
+    text-align: center;
+}
+.img2{
+    float: left;
+    text-align: center;
+}
+.img3{
+    float: left;
+    text-align: center;
+}
+.img4{
+    float: left;
+    text-align: center;
+}
+.img5{
+    float: left;
+    text-align: center;
+}
+.img6{
+    float: left;
+    text-align: center;
+}
+.img7{
+    float: left;
     text-align: center;
 }
