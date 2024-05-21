@@ -18,25 +18,8 @@ input{
     align-self: center;
     margin-right: 20px;
     border-radius: 7px;
+    
 }
 h1{
     color: white;
 }
-@media (min-width: 1024px){
-    #hamburger{
-        display: none;
-    }
-}
-@media (max-width: 1024px){
-    li a{
-        display: none;
-    }
-    input{
-        align-content: center;
-    }
-}
-@media (max-width: 768px){
-    input{display: none;}
-}
-
-
