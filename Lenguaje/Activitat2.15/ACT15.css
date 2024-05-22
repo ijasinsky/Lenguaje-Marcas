@@ -1,0 +1,22 @@
+header{
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.transition{
+    text-align: center;
+    margin-right: 50px;
+    box-shadow: 1px 2px 8px cornflowerblue;
+    transition: transform 500ms;
+}
+img{
+    border-radius: 50%;
+    size: 20%;
+}
+.transition:hover{
+    transform: scale(1.05);
+}
