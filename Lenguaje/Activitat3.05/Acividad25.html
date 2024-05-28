@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad19</title>
+    <link rel="stylesheet" href="ACT25CSS.css">
+</head>
+<body>
+    <header>
+            <nav>
+                <h1 id="h1">Editorial</h1>
+                <ul>
+                    <li><a href="Inicio">Inicio</a></li>
+                    <li><a href="Llibres">Sobre nosaltres</a></li>
+                    <li><a href="Autors">Serveis</a></li>
+                    <li><a href="Contacte">Contacte</a></li>
+                </ul>
+                <input type="search" placeholder="Cerca...">
+                <h1 id="hamburger">☰</h1>
+        </nav>
+    </header>
+    <div class="no">
+        <p>parapa</p>
+    </div>
+    <button type="button" onclick="changeColor()"> Click Me!</button>
+    <button type="button" onclick="removeClass()"> Click Me2!</button>
+    <script>
+        function changeColor(){
+        document.getElementById('h1').style.color = 'black';
+        }
+        function removeClass(){
+        var elements = document.querySelectorAll('.no');
+        elements.forEach(function(element) {
+            element.classList.remove('no');
+        });
+    }
+    </script>
+</body>
+</html>
