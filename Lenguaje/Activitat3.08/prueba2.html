@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Añadir tareas</h2>
+    <input type="text" id="escribeTarea" placeholder="Escribe algo...">
+    <button onclick="mostrarTarea()">Enviar</button>
+    <h2>Lista de tareas</h2>
+    <ul id="listaTareas"></ul> <!-- Cambiado a 'ul' para una lista ordenada -->
+    <button id="eliminar" onclick="eliminarTareas()">Eliminar</button>
+<script>
+    function mostrarTarea(){
+        var obtenerTarea = document.getElementById("escribeTarea").value;
+        if(obtenerTarea.trim() !== "") {
+            var nuevaTarea = document.createElement("li"); // Crear un nuevo elemento de lista
+            nuevaTarea.textContent = obtenerTarea; // Asignar el contenido de la tarea al elemento de lista
+            document.getElementById("listaTareas").appendChild(nuevaTarea); // Añadir la nueva tarea a la lista
+            document.getElementById("escribeTarea").value = ""; // Limpiar el campo de entrada
+        }
+    }
+
+    function eliminarTareas(){
+        var lista = document.getElementById("listaTareas");
+        while(lista.firstChild) {
+            lista.removeChild(lista.firstChild); // Eliminar todas las tareas de la lista
+        }
+    }
+</script>
+</body>
+</html>
