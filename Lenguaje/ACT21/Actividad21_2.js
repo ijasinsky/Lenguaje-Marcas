@@ -9,11 +9,9 @@ function fahrenheitACelsius(fahrenheit) {
 function main() {
   console.log("Conversor de Temperatura");
 
-  // Pedir al usuario que introduzca la temperatura y la escala
   var temperatura = parseFloat(prompt("Introduce la temperatura:"));
   var escala = prompt("¿En qué escala? (C para Celsius, F para Fahrenheit):");
 
-  // Realizar la conversión adecuada
   if (escala.toUpperCase() === 'C') {
       var resultado = celsiusAFahrenheit(temperatura);
       console.log(temperatura + " grados Celsius son " + resultado.toFixed(2) + " grados Fahrenheit.");
@@ -25,5 +23,4 @@ function main() {
   }
 }
 
-// Llamar a la función principal
 main();
