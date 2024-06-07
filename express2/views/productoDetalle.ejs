@@ -1,0 +1,10 @@
+<%- include ("header") %>
+
+    <div>
+        <h1>Detalles de Producto</h1>
+        <p><%= producto.nom %></p>
+        <p><%= producto.precio %>€</p>
+    </div>
+    <h2><a href="productoUpdate?id=<%= producto.id %>">Editar Producto</a></h2>
+
+    <%- include("footer") %>

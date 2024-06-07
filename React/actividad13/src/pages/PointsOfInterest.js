@@ -1,17 +1,16 @@
-// src/pages/PointsOfInterest.js
+// src/pages/Home.js
 import React from 'react';
 
-function PointsOfInterest() {
+function Home() {
   return (
     <div className="container mt-5">
-      <h1>Punts d'Interès</h1>
-      <ul>
-        <li>Monument 1</li>
-        <li>Parc 2</li>
-        <li>Museu 3</li>
-      </ul>
+      <h1>Benvingut a la nostra guia turística</h1>
+      <p>
+        Descobreix els millors llocs, restaurants, hotels i activitats de lleure a la nostra ciutat fictícia, Turistòpolis.
+        Explora el que aquesta meravellosa ciutat té per oferir i gaudeix d'una experiència inoblidable.
+      </p>
     </div>
   );
 }
 
-export default PointsOfInterest;
+export default Home;

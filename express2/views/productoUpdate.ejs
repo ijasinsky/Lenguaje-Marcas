@@ -1,0 +1,12 @@
+<%- include("header") %>
+
+<h2>Edición de Producto</h2>
+<form action="productoUpdate" method="post">
+    <input type="text" name="id" id="id" hidden value="<%= producto.id %>">
+    <label for="nom">Nombre </label>
+    <input type="text" name="nom" id="nom" value="<%= producto.nom %>">
+    <label for="precio">Precio </label>
+    <input type="text" name="precio" id="precio" value="<%= producto.precio %>">
+    <button type="submit">Enviar</button>
+</form>
+<%- include("footer") %>

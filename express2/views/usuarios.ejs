@@ -1,0 +1,18 @@
+<%- include("header") %>
+
+    <form action="/usuarios">
+        <div>
+            <h1>Usuarios</h1>
+            <% usuarios.forEach((usuarios, index )=> { %>
+                    <a href="/usuarioDetalle?id=<%= usuarios.id %>">
+                        <p>
+                            <%= usuarios.nombre %>
+                        </p>
+                    </a>
+                <% }) %>
+        </div>
+    </form>
+    
+    <a class="btn btn-primary" href="/usuario"> Crear usuario </a>
+
+    <%include("footer") %>

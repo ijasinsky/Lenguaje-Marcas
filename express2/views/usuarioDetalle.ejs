@@ -1,0 +1,11 @@
+<%- include("header") %>
+
+<div>
+<p class="h1">Detalles de Usuario</p>
+<p><%= usuario.nombre %></p>
+<p><%= usuario.email %></p>
+</div>
+
+<h2><a href="usuarioUpdate?id=<%= usuario.id %>">Editar Usuario</a></h2>
+
+<%- include("footer") %>
