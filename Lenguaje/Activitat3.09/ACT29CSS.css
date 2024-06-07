@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.comentarios {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+.comentario {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+.btn-eliminar {
+    color: red;
+    cursor: pointer;
+}

@@ -3,30 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Actividad28</title>
+    <style>
+        .completada {
+            text-decoration: line-through;
+            color: grey;
+        }
+    </style>
 </head>
 <body>
     <h2>Añadir tareas</h2>
     <input type="text" id="escribeTarea" placeholder="Escribe algo...">
     <button onclick="mostrarTarea()">Enviar</button>
     <h2>Lista de tareas</h2>
-    <ul id="listaTareas"></ul> <!-- Cambiado a 'ul' para una lista ordenada -->
-    <button id="eliminar" onclick="eliminarTareas()">Eliminar</button>
+    <ul id="listaTareas"></ul> 
+    <button id="eliminarCompletadas" onclick="eliminarTareasCompletadas()">Eliminar Completadas</button>
+    <button id="filtrarTodas" onclick="filtrarTareas('todas')">Mostrar Todas</button>
+    <button id="filtrarActivas" onclick="filtrarTareas('activas')">Mostrar Activas</button>
+    <button id="filtrarCompletadas" onclick="filtrarTareas('completadas')">Mostrar Completadas</button>
+    
 <script>
-    function mostrarTarea(){
+    function mostrarTarea() {
         var obtenerTarea = document.getElementById("escribeTarea").value;
         if(obtenerTarea.trim() !== "") {
-            var nuevaTarea = document.createElement("li"); // Crear un nuevo elemento de lista
-            nuevaTarea.textContent = obtenerTarea; // Asignar el contenido de la tarea al elemento de lista
-            document.getElementById("listaTareas").appendChild(nuevaTarea); // Añadir la nueva tarea a la lista
-            document.getElementById("escribeTarea").value = ""; // Limpiar el campo de entrada
+            var nuevaTarea = document.createElement("li");
+            
+            var checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.onchange = function() {
+                if(this.checked) {
+                    nuevaTarea.classList.add("completada");
+                } else {
+                    nuevaTarea.classList.remove("completada");
+                }
+            };
+
+            var textoTarea = document.createElement("span");
+            textoTarea.textContent = obtenerTarea;
+
+            var botonEliminar = document.createElement("button");
+            botonEliminar.textContent = "Eliminar";
+            botonEliminar.onclick = function() {
+                this.parentNode.remove();
+            };
+
+            nuevaTarea.appendChild(checkbox);
+            nuevaTarea.appendChild(textoTarea);
+            nuevaTarea.appendChild(botonEliminar);
+
+            document.getElementById("listaTareas").appendChild(nuevaTarea);
+            document.getElementById("escribeTarea").value = "";
         }
     }
 
-    function eliminarTareas(){
+    function eliminarTareasCompletadas() {
         var lista = document.getElementById("listaTareas");
-        while(lista.firstChild) {
-            lista.removeChild(lista.firstChild); // Eliminar todas las tareas de la lista
+        var tareas = lista.getElementsByTagName("li");
+        for(var i = tareas.length - 1; i >= 0; i--) {
+            if(tareas[i].classList.contains("completada")) {
+                tareas[i].remove();
+            }
+        }
+    }
+
+    function filtrarTareas(filtro) {
+        var lista = document.getElementById("listaTareas");
+        var tareas = lista.getElementsByTagName("li");
+        for(var i = 0; i < tareas.length; i++) {
+            switch(filtro) {
+                case 'todas':
+                    tareas[i].style.display = "";
+                    break;
+                case 'activas':
+                    if(tareas[i].classList.contains("completada")) {
+                        tareas[i].style.display = "none";
+                    } else {
+                        tareas[i].style.display = "";
+                    }
+                    break;
+                case 'completadas':
+                    if(tareas[i].classList.contains("completada")) {
+                        tareas[i].style.display = "";
+                    } else {
+                        tareas[i].style.display = "none";
+                    }
+                    break;
+            }
         }
     }
 </script>
